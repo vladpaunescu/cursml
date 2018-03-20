@@ -1,0 +1,4 @@
+baseline sapt trec: 0.788
+random flip : 0.81
+random brightness/contrast: 0.8
+inception-slim: 0.81

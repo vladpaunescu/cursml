@@ -1,0 +1,4 @@
+logs/
+*.tfevents*
+data/
+__pycache__
