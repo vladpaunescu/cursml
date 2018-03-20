@@ -1,4 +1,30 @@
 baseline sapt trec: 0.788
 random flip : 0.81
 random brightness/contrast: 0.8
+
+
 inception-slim: 0.81
+    - cu SGD (lr = 0.05)
+    - flip lr
+
+INFO:tensorflow:Test 37500: accuracy:0.8125 loss: 0.56833893
+INFO:tensorflow:---> Train 37750: accuracy:0.90625 loss: 0.263659
+INFO:tensorflow:Test 37750: accuracy:0.81229967 loss: 0.56899416
+INFO:tensorflow:---> Train 38000: accuracy:0.9375 loss: 0.16648123
+INFO:tensorflow:Test 38000: accuracy:0.8114984 loss: 0.5685286
+INFO:tensorflow:---> Train 38250: accuracy:0.875 loss: 0.28740013
+INFO:tensorflow:Test 38250: accuracy:0.8117989 loss: 0.56863254
+INFO:tensorflow:---> Train 38500: accuracy:0.9375 loss: 0.2327837
+INFO:tensorflow:Test 38500: accuracy:0.8119992 loss: 0.56822675
+
+data augmentation
+   - inception-slim: 0.85 - cu AdamOptimizer (lr = 0.001)
+   - flip lr + mean + sttdev norm centered around + contrast augm
+   - step down at 10000, lr decay 0.1
+
+
+INFO:tensorflow:Test 22750: accuracy:0.8541667 loss: 0.46313256
+INFO:tensorflow:---> Train 23000: accuracy:1.0 loss: 0.055719778
+INFO:tensorflow:Test 23000: accuracy:0.85396636 loss: 0.46309876
+INFO:tensorflow:---> Train 23250: accuracy:0.9375 loss: 0.13596132
+INFO:tensorflow:Test 23250: accuracy:0.853766 loss: 0.46272925

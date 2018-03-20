@@ -177,7 +177,7 @@ def inception_resnet_slim_base(inputs,
 
 def inception_resnet_slim(images, num_classes=10,
                           is_training=False,
-                          dropout_keep_prob=0.85,
+                          dropout_keep_prob=0.8,
                           prediction_fn=tf.nn.softmax,
                           activation_fn=tf.nn.relu,
                           scope='InceptionResnet'):

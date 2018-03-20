@@ -62,7 +62,7 @@ class Config(object):
   width = 32
   channels = 3
   num_classes = 10
-  initial_learning_rate = 0.05
+  initial_learning_rate = 0.001
   experiment="InceptionSlim"
 
 
@@ -95,7 +95,7 @@ def train(dataset, config):
   num_steps = 50000
   num_examples = dataset.get_train_num_examples()
   iters = num_examples / config.batch_size
-  learning_rate_step = 10000
+  learning_rate_step = 15000
   learning_rate_decay = 0.1
 
   tf.reset_default_graph()
